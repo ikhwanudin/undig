@@ -1,0 +1,212 @@
+<!--
+  ## Introduction
+     `amp-story` supports a [desktop and landscape](https://github.com/ampproject/amphtml/blob/main/extensions/amp-story/amp-story.md#landscape-orientation-and-full-bleed-desktop-experience-opt-in) experience.
+-->
+<!-- -->
+<!doctype html>
+<html ⚡ lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="This is the AMP Boilerplate.">
+    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
+    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0/amp-story-1.0.js">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+    <script async custom-element="amp-audio" src="https://cdn.ampproject.org/v0/amp-audio-0.1.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@600&family=Nunito:wght@200;600;900&family=Roboto+Condensed:ital,wght@1,700&family=Roboto:ital,wght@0,300;0,500;0,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <!-- Import other AMP Extensions here -->
+    <script async custom-element="amp-story-interactive" src="https://cdn.ampproject.org/v0/amp-story-interactive-0.1.js"></script>
+    <style amp-custom>
+      amp-story-page-attachment {
+        width: 50vw;
+      }
+      .align-to-bottom {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        bottom: 120px;
+      }
+      .config-text {
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+      }
+      .config-text >:nth-child(1) {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 100;
+        position: absolute;
+        top: 4rem;
+        font-size: .9rem;
+      }
+      .config-text >:nth-child(2) {
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 1.9rem;
+        margin-bottom: 1.1rem;
+      }
+      .config-text >:nth-child(2) span {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+        margin-bottom: 1.1rem;
+      }      
+      .config-text >:nth-child(3) {
+        font-family: 'Roboto Mono', monospace;
+        line-height: 2rem;
+      }
+      pre {
+        text-align: left;
+      }
+    </style>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <link rel="canonical" href=".">
+    <title>Web Stories CTAs</title>
+  </head>
+
+  <body>
+    <!-- ## Desktop and landscape support -->
+    <!-- If `supports-landscape` attribute is specified on the `amp-story` element, it will:
+    - allow the story to be seen when a mobile device is held in a landscape orientation
+    - change the desktop experience to an immersive full bleed mode, replacing the default three portrait panels experience -->
+    <amp-story standalone supports-landscape
+      title="Stories in AMP - Hello World"
+      publisher="AMP Project"
+      publisher-logo-src="https://amp.dev/favicons/coast-228x228.png"
+      poster-portrait-src="https://amp.dev/static/samples/img/story_dog2_portrait.jpg"
+      poster-square-src="https://amp.dev/static/samples/img/story_dog2_square.jpg"
+      poster-landscape-src="https://amp.dev/static/samples/img/story_dog2_landscape.jpg">
+
+      <amp-story-page 
+        id="inline-dark-theme-example-1-image"
+        background-audio="http://localhost/amp_undig/assets/music/always-with-me-always-with-you-long-21256.mp3"
+        style="background-color: #FFF">
+        <amp-story-grid-layer template="fill">
+          <amp-img layout="fill" src="assets/img/1.jpg" ></amp-img>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="fill">
+          <div style="text-align: center; margin-top: 24.1rem;">
+            <span style="font-family: 'Inter', sans-serif; display: block; color: white; background: black; display: inline-block; border-radius: 1rem; padding: 0.2rem 0.55rem; font-size: 0.7rem; margin-bottom: 1rem;">12 Desember 2022</span>
+            <span style="font-family: 'Archivo Black', sans-serif; display: block; font-size: 2.9rem; line-height: 2.9rem; letter-spacing: -0.1rem; color: #7687F5;">
+                Ikhwan<br>& Lina
+            </span>
+          </div>
+        </amp-story-grid-layer>
+        <amp-story-page-attachment
+          layout="nodisplay"
+          cta-text="Buka Undangan"
+          data-title="We are Getting Married"
+          theme="light">
+          <div >
+            <div style="font-family: 'Nunito', sans-serif; padding: 30px 30px 20px 30px">
+                <span style="font-weight: 600; font-size: 32px; line-height: 44px; display: block; margin-bottom: 10px">
+                    We are Getting Married
+                </span>
+                <span style="font-weight: 200; font-size: 24px; display: block">
+                    <div>
+                        <strong>Nur Ikhwanudin</strong> <br>
+                        <small>Putra Bpk Suyitno & Ibu Sawini</small>
+                    </div>
+
+                    <div>
+                        &
+                    </div>
+
+                    <div>
+                        <strong>Lina Nurfadhilah</strong> <br>
+                        <small>Putra Bpk Nuh & Ibu Siti</small>
+                    </div>
+
+                    &nbsp;
+                    <div>
+                        <small>Pada tanggal 12 Desember 2022</small>
+                    </div>
+                </span>
+            </div>
+            <div>
+              <amp-img layout="responsive" height="569.16" width="360" src="https://wsdemos.uc.r.appspot.com/cta-buttons/assets/sean-dong/sean-dong-interior.png"></amp-img>
+            </div>
+          </div>
+          <div>
+            <span style="font-family: 'Poppins', sans-serif; font-size: 30px; line-height: 28px; letter-spacing: .5px; font-weight: 600; margin: 20px 20px 20px 20px; color: #FD484C; display: inline-block;">
+              Editors' Picks for Decorative Accessories
+            </span>
+            <div style="display: flex; justify-content: center; margin-bottom: 20px">
+              <amp-img layout="fixed" height="168" width="168" src="https://wsdemos.uc.r.appspot.com/cta-buttons/assets/editors-picks/editors-picks-attachment-chair.png"></amp-img>
+              <div style="font-family: 'Poppins', sans-serif; font-size: 20px; line-height: 20px; letter-spacing: .5px; padding: 30px; background-color: #8ADEA6; border-radius: 20px; width: 168px; height: 168px; box-sizing: border-box; margin-top: 30px; margin-left: -16px;">
+                <span style="font-weight: 600; display: block; margin-bottom: 24px">Colorful Accent Chair</span>
+                <span style="font-weight: 300; display: block;">$200</span>
+              </div>
+            </div>
+            <div style="display: flex; justify-content: center; margin-bottom: 20px">
+              <div style="font-family: 'Poppins', sans-serif; font-size: 20px; line-height: 20px; letter-spacing: .5px; padding: 30px; background-color: #D9F8FF; border-radius: 20px; width: 168px; height: 168px; box-sizing: border-box;">
+                <span style="font-weight: 600; display: block; margin-bottom: 24px">Colorful Portable Fan</span>
+                <span style="font-weight: 300; display: block;">$32</span>
+              </div>
+              <amp-img style="margin-top: 30px; margin-left: -16px;" layout="fixed" height="168" width="168" src="https://wsdemos.uc.r.appspot.com/cta-buttons/assets/editors-picks/editors-picks-attachment-fan.png"></amp-img>
+            </div>            
+          </div>
+        </amp-story-page-attachment>
+      </amp-story-page>
+
+
+      <amp-story-page id="outlink-example-custom-background" style="background-color: #7687F5">
+        <amp-story-grid-layer template="fill">
+          <!-- <div style="background-image: url(./assets/img/1.jpg); background-size: contain; background-repeat: no-repeat; background-position: center;"></div> -->
+          <amp-img src="./assets/img/2.jpg"
+          width="1920"
+          height="1277" layout="responsive"
+          alt="..."></amp-img>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical">
+          <div style="font-family: 'Montserrat', sans-serif;">
+            <span style="font-weight: 700; display: block; font-size: 2.8rem; line-height: 2.9rem; margin-bottom: 0.9rem;">Nur Ikhwanudin <br>& Lina Nurfadhilah</span>
+            <span style="font-weight: 500; font-size: 1rem;">20 20 20</span>
+          </div>
+        </amp-story-grid-layer>
+        <amp-story-page-attachment
+          layout="nodisplay"
+          cta-text="Location Details">
+          <div style="margin: 8px 13px 6px 15px; display: flex;">
+            <amp-img style="margin-right: 14px" layout="fixed" width="40" height="40" src="./cta-buttons/assets/golden-gate/golden-gate-icon.png"></amp-img>
+            <div style="font-family: 'Roboto', sans-serif; font-size: 16px; line-height: 20px;">
+              <span style="font-weight: bold; display: block;">Golden Gate Bridge,</span>
+              <span style="font-weight: 300;">San Francisco, CA</span>
+            </div>
+          </div>
+          <div style="width: 100%; height: 300px;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48429.19651387459!2d-122.50889425828319!3d37.817555558860874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808586deffffffc3%3A0xcded139783705509!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1620310802765!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </amp-story-page-attachment>
+        <!-- <amp-story-page-outlink 
+          layout="nodisplay" 
+          theme="custom"
+          cta-accent-color="#3B2984"
+          cta-accent-element="background"
+          cta-image='https://wsdemos.uc.r.appspot.com/cta-buttons/assets/reading/reading-icon.png'>
+          <a href="https://google.com">Explore Tips</a>
+        </amp-story-page-outlink> -->
+      </amp-story-page>
+
+      <!-- <amp-story-page id="page-1">
+        <amp-story-grid-layer template="fill">
+          <amp-img src="https://amp.dev/static/samples/img/tree-1920x1277.jpg"
+          width="1920"
+          height="1277" layout="responsive"
+          alt="..."></amp-img>
+        </amp-story-grid-layer>
+      </amp-story-page> -->
+
+      <amp-story-bookend src="https://amp.dev/static/samples/json/bookend.json" layout="nodisplay">
+      </amp-story-bookend>
+    </amp-story>
+  </body>
+</html>
